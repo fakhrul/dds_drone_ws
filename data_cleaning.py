@@ -23,7 +23,7 @@ def is_good_image(filename):
 
 def main():
 
-    source = '../images'
+    source = '/content/images'
     print('Start cleaning corrupted images')
     images = [f for f in os.listdir(source)
               if re.search(r'([a-zA-Z0-9\s_\\.\-\(\):])+(.jpg|.jpeg|.png)$', f)]
